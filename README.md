@@ -9,7 +9,11 @@ Sample Docker Application
 
 ## Build
 
-
+```
+docker build -t hello-world-application -f Dockerfile-base .
+docker tag hello-world-application <your-docker-organization>/hello-world-application
+docker push <your-docker-organization>/hello-world-application
+```
 
 ## License
 
