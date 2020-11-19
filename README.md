@@ -11,6 +11,16 @@ Sample Docker Application
 
 ```
 docker build -t hello-world-application -f Dockerfile .
+```
+
+## Run
+
+```
+docker run --rm -p 8080:8080 hello-world-application
+```
+
+## Push
+```docker
 docker tag hello-world-application <your-docker-organization>/hello-world-application
 docker push <your-docker-organization>/hello-world-application
 ```
