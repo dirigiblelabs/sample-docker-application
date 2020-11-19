@@ -1,4 +1,4 @@
-FROM dirigiblelabs/dirigible-runtime:latest
+FROM dirigiblelabs/dirigible-runtime-anonymous:latest
 
 RUN mkdir -p $CATALINA_HOME/target/dirigible/repository/root/registry/public/
 COPY helloWorld/ $CATALINA_HOME/target/dirigible/repository/root/registry/public/helloWorld/
